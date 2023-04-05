@@ -4,20 +4,24 @@ import java.util.Scanner;
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-//        Employee employee1 = new Employee(5055, "Yash Tailor", 22, 100000, "JAVA");
-//
-//        Employee employee2 = new Employee(5056, "Yash Fofdiya", 25, 1200000, "JAVA");
         Scanner scn = new Scanner(System.in);
+        System.out.print("Enter Employee Id : ");
         int id = scn.nextInt();
-        String name = scn.nextLine();
-        int age = scn.nextInt();
-        int salary = scn.nextInt();
-        String dept = scn.nextLine();
-        Employee emp3 = new Employee(id, name, age, salary, dept);
-        emp3.EmployeeDetails();
-//        employee1.EmployeeDetails();
-//        System.out.println("---------------------------------------");
-//        employee2.EmployeeDetails();
 
+        System.out.print("Enter Employee Age : ");
+        int age = scn.nextInt();
+        scn.nextLine();
+
+        System.out.print("Enter Employee Name : ");
+        String name = scn.nextLine();
+
+        System.out.print("Enter Employee Salary : ");
+        long salary = scn.nextLong();
+
+        System.out.print("Enter Employee Dept :");
+        String dept = scn.next();
+
+        Employee emp = new Employee(id, name, age, salary, dept);
+        emp.EmployeeDetails();
     }
 }
