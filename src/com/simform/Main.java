@@ -1,3 +1,7 @@
+package com.simform;
+
+import com.simform.person.Employee;
+
 import java.util.Scanner;
 
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,

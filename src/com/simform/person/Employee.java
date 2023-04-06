@@ -1,18 +1,18 @@
-import java.util.Formatter;
+package com.simform.person;
 
-public class Employee extends Person{
+public class Employee extends Person {
     int empId;
     long empSalary;
     String empDept;
 
-    Employee(int id, String name, int age, long salary, String dept){
+    public Employee(int id, String name, int age, long salary, String dept) {
         super(age, name);
         this.empId = id;
         this.empSalary = salary;
         this.empDept = dept;
     }
 
-    void EmployeeDetails(){
+    public void EmployeeDetails() {
         System.out.println("---------------------------------------");
         System.out.println("Welcome !!!");
         System.out.println("Employee ID     :  " + empId);
